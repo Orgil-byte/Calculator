@@ -35,6 +35,10 @@ for (let i = 0; i < buttonValues.length; i++) {
   let button = document.createElement("button");
   button.innerText = value;
   //Button-ii ungu solino
+  if (value == `=`) {
+    button.style.width = `380px`;
+    button.style.gridColumn = `span 4`;
+  }
   if (value == 0) {
     button.style.width = `200px`;
     button.style.gridColumn = `span 2`;
